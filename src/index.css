@@ -3,3 +3,19 @@
 @tailwind utilities;
 
 /* Add any additional custom styles below */
+/* Add this CSS to your index.css or appropriate stylesheet */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the main container takes full height */
+}
+
+.flex-1 {
+    flex: 1; /* This allows the content to expand and push the footer down */
+}
