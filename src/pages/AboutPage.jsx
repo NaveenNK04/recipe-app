@@ -7,7 +7,7 @@ const AboutPage = () => {
             <div className="max-w-screen-lg mx-auto">
                 {/* Logo Section */}
                 <div className="flex justify-center mb-6">
-                    <img src="public/Screenshot 2024-10-23 204937.png" alt="Website Logo" className="h-30 w-auto" />
+                    <img src="public/Screenshot 2024-10-23 204937.png" alt="Website Logo" className="h-22 w-22" />
                 </div>
 
                 <h1 className="text-4xl font-bold mb-4">About Recipe Finder</h1> {/* Main heading style */}
