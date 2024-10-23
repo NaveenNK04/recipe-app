@@ -19,3 +19,31 @@ html, body {
 .flex-1 {
     flex: 1; /* This allows the content to expand and push the footer down */
 }
+/* Example global styles in App.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-gray-100 {
+    background-color: #f7f7f7;
+}

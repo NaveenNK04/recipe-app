@@ -22,9 +22,10 @@ const ContactPage = () => {
                     <li><strong>Social Media:</strong> Follow us on our social media platforms for the latest updates!</li>
                     <li><strong>Address:</strong>
                         <div className="ml-4">
-                            III Year 'A' Section EIE Department,<br />
-                            Kongu Engineering College,<br />
-                            Perundurai - 638060
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22EIR022, 22EIR032, 22EIR036,<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; III Year 'A' Section EIE Department,<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kongu Engineering College,<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Perundurai - 638060.
                         </div>
                     </li>
                 </ul>

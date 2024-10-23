@@ -20,17 +20,14 @@ const HomePage = () => {
 		setLoading(true);
 		setRecipes([]);
 
-		// Construct calorie filter
-		const calorieFilter = (caloriesFrom || caloriesTo) ? `&calories=${caloriesFrom}-${caloriesTo}` : "";
+		const calorieFilter = caloriesFrom || caloriesTo ? `&calories=${caloriesFrom}-${caloriesTo}` : "";
 		const dietFilter = selectedDiet ? `&health=${selectedDiet}` : "";
 		const allergyFilter = selectedAllergy ? `&health=${selectedAllergy}` : "";
 
-		const url = `https://api.edamam.com/api/recipes/v2/?app_id=${APP_ID}&app_key=${APP_KEY}&q=${searchQuery}&type=public${calorieFilter}${dietFilter}${allergyFilter}`;
-
-		console.log("Fetching URL:", url); // Debugging log
-
 		try {
-			const res = await fetch(url);
+			const res = await fetch(
+				`https://api.edamam.com/api/recipes/v2/?app_id=${APP_ID}&app_key=${APP_KEY}&q=${searchQuery}&type=public${calorieFilter}${dietFilter}${allergyFilter}`
+			);
 
 			// Check if the response is OK
 			if (!res.ok) {
@@ -39,7 +36,6 @@ const HomePage = () => {
 
 			const data = await res.json();
 			setRecipes(data.hits);
-			console.log("Fetched Recipes:", data.hits); // Debugging log
 		} catch (error) {
 			console.error("Fetch error: ", error.message);
 		} finally {
@@ -125,7 +121,7 @@ const HomePage = () => {
 								))}
 							</div>
 							<div className="p-4 border-t">
-								<h3 className="font-bold">Allergies</h3>
+								<h3 className="font-bold">Ingredients</h3>
 								{allergyOptions.map((option) => (
 									<label key={option} className="flex items-center">
 										<input
