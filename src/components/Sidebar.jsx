@@ -1,5 +1,5 @@
 // src/components/Sidebar.jsx
-import { Heart, Home, Info, Mail } from "lucide-react";
+import { Heart, Home, Info, Mail, User } from "lucide-react"; // Import the User icon
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -38,6 +38,11 @@ const DesktopSidebar = () => {
                         <Mail size={"24"} />
                         <span className='font-bold hidden md:block'>Contact</span>
                     </Link>
+                    {/* Add the Famous Chefs link */}
+                    <Link to={"/chefs"} className='flex gap-1'>
+                        <User size={"24"} />
+                        <span className='font-bold hidden md:block'>Famous Chefs</span>
+                    </Link>
                 </ul>
             </div>
         </div>
@@ -58,6 +63,10 @@ const MobileSidebar = () => {
             </Link>
             <Link to={"/contact"}>
                 <Mail size={"24"} className='cursor-pointer' />
+            </Link>
+            {/* Add the Famous Chefs link */}
+            <Link to={"/chefs"}>
+                <User size={"24"} className='cursor-pointer' />
             </Link>
         </div>
     );
