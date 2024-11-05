@@ -19,11 +19,9 @@ const HomePage = () => {
 	const fetchRecipes = async () => {
 		setLoading(true);
 		setRecipes([]);
-
 		const calorieFilter = caloriesFrom || caloriesTo ? `&calories=${caloriesFrom}-${caloriesTo}` : "";
 		const dietFilter = selectedDiet ? `&health=${selectedDiet}` : "";
 		const allergyFilter = selectedAllergy ? `&health=${selectedAllergy}` : "";
-
 		try {
 			const res = await fetch(
 				`https://api.edamam.com/api/recipes/v2/?app_id=${APP_ID}&app_key=${APP_KEY}&q=${searchQuery}&type=public${calorieFilter}${dietFilter}${allergyFilter}`

@@ -24,8 +24,8 @@ const App = () => {
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/contact" element={<ContactPage />} />
                         <Route path="/chefs" element={<ChefListPage />} />
-                        <Route path="/chef/:id" element={<ChefDetailsPage />} />
-                        <Route path="/chef/:id/recipes" element={<ChefRecipesPage />} /> {/* Add the route for chef recipes */}
+                        <Route path="/chef/:id" element={<ChefDetailsPage />} /> {/* Chef Details Page */}
+                        <Route path="/chef/:id/recipes" element={<ChefRecipesPage />} /> {/* Chef Recipes Page */}
                     </Routes>
                 </div>
             </div>
