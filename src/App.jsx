@@ -12,6 +12,7 @@ import ChefDetailsPage from './pages/ChefDetailsPage';
 import ChefRecipesPage from './pages/ChefRecipesPage';
 import IndianFestivalRecipes from './pages/IndianFestivalRecipes';
 import Footer from './components/Footer'; // Import the Footer component
+import LogoPage from './pages/LogoPage'; // Import LogoPage
 
 const App = () => {
     return (
@@ -30,6 +31,7 @@ const App = () => {
                             <Route path="/chef/:id" element={<ChefDetailsPage />} />
                             <Route path="/chef/:id/recipes" element={<ChefRecipesPage />} />
                             <Route path="/festival-recipes" element={<IndianFestivalRecipes />} />
+                            <Route path="/logo" element={<LogoPage />} /> {/* Add LogoPage route */}
                         </Routes>
                     </div>
                 </div>

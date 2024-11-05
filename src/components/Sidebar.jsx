@@ -1,5 +1,5 @@
 // src/components/Sidebar.jsx
-import { Heart, Home, Info, Mail, User, Gift } from "lucide-react"; // Import the Gift icon
+import { Heart, Home, Info, Mail, User, Gift, Image } from "lucide-react"; // Import Image icon for logo
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -22,7 +22,11 @@ const DesktopSidebar = () => {
                     <img src='/mobile-logo.svg' alt='logo' className='block md:hidden' />
                 </div>
                 <ul className='flex flex-col items-center md:items-start gap-8'>
-                    <Link to={"/"} className='flex gap-1'>
+                    <Link to={"/logo"} className='flex gap-1'>
+                        <Image size={"24"} /> {/* Icon for Logo Page */}
+                        <span className='font-bold hidden md:block'>Logo</span>
+                    </Link>
+                    <Link to={"/"} className='flex gap-1'>
                         <Home size={"24"} />
                         <span className='font-bold hidden md:block'>Home</span>
                     </Link>
@@ -30,13 +34,12 @@ const DesktopSidebar = () => {
                         <Heart size={"24"} />
                         <span className='font-bold hidden md:block'>Favorites</span>
                     </Link>
-                    {/* Add the Famous Chefs link */}
                     <Link to={"/chefs"} className='flex gap-1'>
                         <User size={"24"} />
                         <span className='font-bold hidden md:block'>Famous Tamil Chefs</span>
                     </Link>
                     <Link to={"/festival-recipes"} className='flex gap-1'>
-                        <Gift size={"24"} /> {/* Changed to Gift icon */}
+                        <Gift size={"24"} />
                         <span className='font-bold hidden md:block'>Festival Recipes</span>
                     </Link>
                     <Link to={"/contact"} className='flex gap-1'>
@@ -62,7 +65,6 @@ const MobileSidebar = () => {
             <Link to={"/favorites"}>
                 <Heart size={"24"} className='cursor-pointer' />
             </Link>
-            {/* Add the Famous Chefs link */}
             <Link to={"/chefs"}>
                 <User size={"24"} className='cursor-pointer' />
             </Link>
@@ -73,7 +75,10 @@ const MobileSidebar = () => {
                 <Info size={"24"} className='cursor-pointer' />
             </Link>
             <Link to={"/festival-recipes"}>
-                <Gift size={"24"} className='cursor-pointer' /> {/* Changed to Gift icon */}
+                <Gift size={"24"} className='cursor-pointer' />
+            </Link>
+            <Link to={"/logo"}>
+                <Image size={"24"} className='cursor-pointer' /> {/* Icon for Logo Page */}
             </Link>
         </div>
     );
