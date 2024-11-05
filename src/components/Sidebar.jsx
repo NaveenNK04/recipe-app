@@ -33,7 +33,7 @@ const DesktopSidebar = () => {
                     {/* Add the Famous Chefs link */}
                     <Link to={"/chefs"} className='flex gap-1'>
                         <User size={"24"} />
-                        <span className='font-bold hidden md:block'>Famous Chefs</span>
+                        <span className='font-bold hidden md:block'>Famous Tamil Chefs</span>
                     </Link>
                     <Link to={"/festival-recipes"} className='flex gap-1'>
                         <Gift size={"24"} /> {/* Changed to Gift icon */}
