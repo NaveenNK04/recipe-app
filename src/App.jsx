@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import HomePage from './pages/HomePage';
 import FavoritesPage from './pages/FavoritesPage';
@@ -22,7 +22,8 @@ const App = () => {
                     <Sidebar />
                     <div className="flex-1">
                         <Routes>
-                            <Route path="/" element={<HomePage />} />
+                            <Route path="/logo" element={<LogoPage />} /> {/* LogoPage route */}
+                            <Route path="/" element={<HomePage />} /> {/* Home page route */}
                             <Route path="/favorites" element={<FavoritesPage />} />
                             <Route path="/recipe-details" element={<RecipeDetails />} />
                             <Route path="/about" element={<AboutPage />} />
@@ -31,7 +32,6 @@ const App = () => {
                             <Route path="/chef/:id" element={<ChefDetailsPage />} />
                             <Route path="/chef/:id/recipes" element={<ChefRecipesPage />} />
                             <Route path="/festival-recipes" element={<IndianFestivalRecipes />} />
-                            <Route path="/logo" element={<LogoPage />} /> {/* Add LogoPage route */}
                         </Routes>
                     </div>
                 </div>
