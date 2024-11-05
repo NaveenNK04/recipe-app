@@ -30,18 +30,18 @@ const DesktopSidebar = () => {
                         <Heart size={"24"} />
                         <span className='font-bold hidden md:block'>Favorites</span>
                     </Link>
-                    <Link to={"/about"} className='flex gap-1'>
-                        <Info size={"24"} />
-                        <span className='font-bold hidden md:block'>About</span>
+                    {/* Add the Famous Chefs link */}
+                    <Link to={"/chefs"} className='flex gap-1'>
+                        <User size={"24"} />
+                        <span className='font-bold hidden md:block'>Famous Chefs</span>
                     </Link>
                     <Link to={"/contact"} className='flex gap-1'>
                         <Mail size={"24"} />
                         <span className='font-bold hidden md:block'>Contact</span>
                     </Link>
-                    {/* Add the Famous Chefs link */}
-                    <Link to={"/chefs"} className='flex gap-1'>
-                        <User size={"24"} />
-                        <span className='font-bold hidden md:block'>Famous Chefs</span>
+                    <Link to={"/about"} className='flex gap-1'>
+                        <Info size={"24"} />
+                        <span className='font-bold hidden md:block'>About</span>
                     </Link>
                 </ul>
             </div>
@@ -58,15 +58,15 @@ const MobileSidebar = () => {
             <Link to={"/favorites"}>
                 <Heart size={"24"} className='cursor-pointer' />
             </Link>
-            <Link to={"/about"}>
-                <Info size={"24"} className='cursor-pointer' />
+            {/* Add the Famous Chefs link */}
+            <Link to={"/chefs"}>
+                <User size={"24"} className='cursor-pointer' />
             </Link>
             <Link to={"/contact"}>
                 <Mail size={"24"} className='cursor-pointer' />
             </Link>
-            {/* Add the Famous Chefs link */}
-            <Link to={"/chefs"}>
-                <User size={"24"} className='cursor-pointer' />
+            <Link to={"/about"}>
+                <Info size={"24"} className='cursor-pointer' />
             </Link>
         </div>
     );

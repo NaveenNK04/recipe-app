@@ -27,7 +27,6 @@ const AboutPage = () => {
                     <li><strong>Cooking Inspiration:</strong> Discover new cooking techniques and ingredients with our helpful tips and tutorials, designed to enhance your culinary skills and confidence in the kitchen.</li>
                     <li><strong>Community Connection:</strong> Join our growing community of food lovers! Share your cooking experiences, exchange tips, and connect with fellow enthusiasts who are just as passionate about Tamil cuisine as you are.</li>
                 </ul>
-
                 <h2 className="text-3xl font-bold mb-2">Why Choose Us?</h2>
                 <p className="text-lg mb-4">
                     At Semmaiya Samaikurom Bayangarama Rusikurom, we believe in the power of food to bring people together. Our commitment to quality, authenticity, and user experience sets us apart. We strive to provide a platform that inspires creativity and fosters a love for cooking in every home.
