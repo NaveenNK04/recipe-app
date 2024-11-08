@@ -14,11 +14,11 @@ const LogoPage = () => {
             <img
                 src="/Screenshot 2024-10-23 204937.png" // Ensure the path is correct for your image
                 alt="Logo"
-                className="w-50 h-68 mb-2"
+                className="w-50 h-68 mb-4" // Adjusted margin-bottom to add space below the image
             />
             <button
                 onClick={handleGoHome}
-                className="bg-blue-600 text-white px-8 py-3 rounded"
+                className="bg-blue-600 text-white px-8 py-3 rounded mb-4" // Added mb-4 to provide space below the button
             >
                 Go Here
             </button>

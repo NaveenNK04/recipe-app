@@ -13,6 +13,16 @@ import ChefRecipesPage from './pages/ChefRecipesPage';
 import IndianFestivalRecipes from './pages/IndianFestivalRecipes';
 import Footer from './components/Footer'; // Import the Footer component
 import LogoPage from './pages/LogoPage'; // Import LogoPage
+import Grill from './pages/Grill';
+import CorianderChickenCurry from './pages/Coriander';
+import MulaiKeeraiCutlet from './pages/Mulai';
+import RawMangoChutney from './pages/Raw';
+import MangoAdai from './pages/Mango';
+import Badusha from './pages/Badusha';
+import PaneerTikkaQuesadilla from './pages/Panner';
+import QuinoaBiryani from './pages/Quino';
+import ChettinadChickenCurry from './pages/Chettinad';
+import MuttonSukka from './pages/Mutton';
 
 const App = () => {
     return (
@@ -31,6 +41,16 @@ const App = () => {
                             <Route path="/chefs" element={<ChefListPage />} />
                             <Route path="/chef/:id" element={<ChefDetailsPage />} />
                             <Route path="/chef/:id/recipes" element={<ChefRecipesPage />} />
+                            <Route path="/grill" element={<Grill />} />
+                            <Route path="/Coriander" element={<CorianderChickenCurry />} />
+                            <Route path="/Mulai" element={<MulaiKeeraiCutlet/>} />
+                            <Route path="/Raw" element={<RawMangoChutney/>} />
+                            <Route path="/Mango" element={<MangoAdai/>} />
+                            <Route path="/Badusha" element={<Badusha/>} />
+                            <Route path="/Panner" element={<PaneerTikkaQuesadilla/>} />
+                            <Route path="/Quino" element={<QuinoaBiryani/>} />
+                            <Route path="/Chettinad" element={<ChettinadChickenCurry/>} />
+                            <Route path="/Mutton" element={<MuttonSukka/>} />
                             <Route path="/festival-recipes" element={<IndianFestivalRecipes />} />
                         </Routes>
                     </div>
