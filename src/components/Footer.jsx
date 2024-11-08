@@ -21,9 +21,9 @@ const Footer = () => {
                     </a>
                 </div>
                 <p className="text-sm mt-4 text-center">
-                    © {new Date().getFullYear()} All Rights Are Reserved * <br />by
+                    © {new Date().getFullYear()} All Rights Are Reserved  <br />by
                     <br />
-                    Semmaiya Samaikurom Bayangarama Rusikurom! *
+                    Semmaiya Samaikurom Bayangarama Rusikurom! 
                 </p>
                 <p className="text-sm mt-2 text-center">
                     Contact Us: <span className="text-blue-400">+91 9842623963</span>
